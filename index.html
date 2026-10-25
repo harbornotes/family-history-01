@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex, nofollow">
+<title>天正家のルーツ調査（東野田と榎並屋）</title>
+<style>
+  :root {
+    --bg-main: #F7F5F0;
+    --bg-card: #FFFFFF;
+    --bg-soft: #F2EFE8;
+    --bg-navy: #EDF2F8;
+    --text-main: #1F2421;
+    --text-muted: #4A524D;
+    --primary: #1B365D;
+    --accent-brown: #5B4636;
+    --accent-slate: #3E4A63;
+    --border: #D9D4CA;
+    --border-strong: #8C8578;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: "Yu Gothic UI", "Yu Gothic", "Meiryo", "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-size: 1.125rem;
+    line-height: 1.85;
+    word-break: auto-phrase;
+    overflow-wrap: anywhere;
+    line-break: strict;
+  }
+
+  main {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 16px 14px 56px;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  /* ---------- タイトル ---------- */
+  .title-block {
+    background: var(--primary);
+    color: #FFFFFF;
+    border-radius: 16px;
+    padding: 24px 18px 22px;
+    margin-bottom: 20px;
+  }
+
+  .title-date {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 3px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .title-sub {
+    font-size: 1.2rem;
+    line-height: 1.55;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 8px 0 16px;
+  }
+
+  .title-lead {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #FFFFFF;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 14px;
+    margin: 0;
+  }
+
+  /* ---------- 目次 ---------- */
+  .toc-nav {
+    background-color: var(--bg-card);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 14px;
+    margin-bottom: 24px;
+  }
+
+  .toc-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--primary);
+    margin-bottom: 4px;
+  }
+
+  .toc-note {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+
+  .toc-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .toc-list li {
+    margin: 0;
+  }
+
+  .toc-list a {
+    display: flex;
+    align-items: center;
+    min-height: 56px;
+    padding: 8px 12px;
+    background-color: var(--bg-main);
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+
+  .toc-list a:active,
+  .toc-list a:focus {
+    background-color: var(--bg-navy);
+    outline: 2px solid var(--primary);
+  }
+
+  .toc-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    border-radius: 50%;
+    font-size: 1rem;
+    margin-right: 12px;
+  }
+
+  /* ---------- セクション ---------- */
+  section {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 14px 18px;
+    margin-bottom: 24px;
+    scroll-margin-top: 12px;
+  }
+
+  h2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+    padding: 0 0 8px;
+    margin-bottom: 20px;
+  }
+
+  .h2-num {
+    flex: 0 0 auto;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--text-main);
+    border-left: 5px solid var(--primary);
+    padding: 2px 0 2px 10px;
+    margin: 30px 0 14px;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--text-main);
+    margin: 10px 0 4px;
+  }
+
+  p {
+    margin-bottom: 14px;
+  }
+
+  ul, ol {
+    padding-left: 24px;
+    margin-bottom: 14px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  .table-label {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+
+  /* ---------- ボックスと右上のラベル ---------- */
+  .box {
+    position: relative;
+    border-radius: 12px;
+    padding: 20px 14px 6px;
+    margin: 26px 0 18px;
+  }
+
+  .box > :last-child {
+    margin-bottom: 8px;
+  }
+
+  .tag {
+    position: absolute;
+    top: -15px;
+    right: 12px;
+    background: var(--bg-card);
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 0 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+
+  .tag-important   { background: var(--primary); color: #FFFFFF; border: 2px solid var(--primary); }
+  .tag-caution     { color: var(--accent-brown); border: 1.5px solid var(--accent-brown); }
+  .tag-exception   { color: var(--text-muted);   border: 1.5px dashed var(--text-muted); }
+  .tag-unconfirmed { color: var(--accent-slate); border: 2px dotted var(--accent-slate); }
+
+  .box-important   { background: var(--bg-navy);  border: 2px solid var(--primary); }
+  .box-caution     { background: #FBF8F4;         border: 1.5px solid var(--accent-brown); }
+  .box-exception   { background: var(--bg-card);  border: 1.5px dashed var(--border-strong); }
+  .box-supplement  { background: var(--bg-soft);  border: 1px solid var(--border); }
+  .box-unconfirmed { background: var(--bg-card);  border: 2px dotted var(--accent-slate); }
+  .box-neutral     { background: var(--bg-soft);  border: 1px solid var(--border); padding-top: 14px; margin-top: 18px; }
+
+  .box-important p,
+  .box-important li {
+    font-size: 1.2rem;
+  }
+
+  .box-title {
+    font-weight: 700;
+    font-size: 1.15rem;
+    line-height: 1.55;
+    margin-bottom: 10px;
+  }
+
+  .box-important .box-title {
+    font-size: 1.25rem;
+    color: var(--primary);
+  }
+
+
+  .lead-block {
+    margin-bottom: 24px;
+  }
+
+  .lead-names {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 0;
+  }
+
+  .table-note {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+  }
+
+  .box-supplement {
+    padding-top: 14px;
+    margin-top: 18px;
+  }
+
+  /* ---------- 流れ図（上から下へ） ---------- */
+  figure {
+    margin: 20px 0;
+  }
+
+  figcaption {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .flow {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .flow > li {
+    margin: 0;
+  }
+
+  .step {
+    border-radius: 12px;
+    padding: 12px 14px 10px;
+    background: var(--bg-card);
+    border: 1.5px solid var(--primary);
+  }
+
+  .step .step-label {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.55;
+    color: var(--primary);
+    margin-bottom: 6px;
+  }
+
+  .step ul {
+    padding-left: 22px;
+    margin: 0 0 4px;
+  }
+
+  .step li {
+    margin-bottom: 4px;
+  }
+
+  .step p {
+    margin: 0 0 4px;
+  }
+
+  .step-blue   { background: var(--bg-navy); }
+  .step-purple { border: 2px dashed var(--accent-slate); }
+  .step-dotted { border: 2px dotted var(--accent-slate); }
+  .step-plain  { border-color: var(--border-strong); }
+
+  .flow > li.arrow {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 6px 0;
+    color: var(--text-muted);
+  }
+
+  /* ---------- カード（表の代わり） ---------- */
+  .cards {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card {
+    margin: 0;
+    background: var(--bg-main);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 14px 6px;
+  }
+
+  .card p {
+    margin-bottom: 8px;
+  }
+
+  .card-head {
+    display: inline-block;
+    background: var(--primary);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    padding: 3px 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .card-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-main);
+  }
+
+  .k {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--text-muted);
+  }
+
+  .k::before {
+    content: "▍";
+    color: var(--primary);
+  }
+
+  /* ---------- 年表 ---------- */
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 6px;
+    border-left: 4px solid var(--border);
+  }
+
+  .timeline > li {
+    position: relative;
+    margin: 0;
+    padding: 0 0 18px 18px;
+  }
+
+  .timeline > li:last-child {
+    padding-bottom: 0;
+  }
+
+  .timeline > li::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    background: var(--primary);
+    border: 3px solid var(--bg-card);
+    border-radius: 50%;
+  }
+
+  .tl-year {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--primary);
+    margin-bottom: 2px;
+  }
+
+  .timeline p {
+    margin: 0;
+  }
+
+  /* ---------- 印刷 ---------- */
+  @media print {
+    body {
+      background-color: #FFFFFF;
+      color: #000000;
+      font-size: 12pt;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 100%;
+      padding: 0;
+    }
+    .title-block {
+      background: none;
+      color: #000000;
+      border: 2px solid #000000;
+    }
+    .title-date, .title-sub, .title-lead {
+      color: #000000;
+      border-color: #000000;
+    }
+    .tag-important {
+      background: none;
+      color: #000000;
+    }
+    section, .box, .card, .step, figure, .timeline > li {
+      break-inside: avoid;
+    }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <!-- タイトル -->
+  <div class="title-block" id="top">
+    <span class="title-date">2026年10月25日時点</span>
+    <h1>天正家のルーツ調査</h1>
+    <p class="title-sub">東野田の土地・家主経営と「榎並屋」</p>
+    <p class="title-lead">
+      確かな史料で分かることから、家に伝わる話、近くの実例、そして推測の幅が大きい話へと、順に整理しています。
+    </p>
+  </div>
+
+  <!-- まず結論 -->
+  <div class="lead-block">
+    <p class="lead-names">この資料に出てくる方は、辰蔵さん、その孫の庄蔵さん、庄蔵さんの子の雄之さんです。</p>
+    <div class="box box-important">
+        <span class="tag tag-important">重要</span>
+        <div class="box-title">結論：最も確かな天正家の姿</div>
+        <p>
+          <strong>「明治の終わりごろには東野田で複数の土地を持ち、昭和の初めには貸家の経営をしていた家」</strong>です。
+        </p>
+        <p>
+          財産のもとは、<strong>庄蔵さんより前の、辰蔵さんの代</strong>に確認できます。
+        </p>
+      </div>
+  </div>
+
+  <!-- 目次 -->
+  <nav class="toc-nav" aria-label="目次">
+    <div class="toc-title">目次</div>
+    <p class="toc-note">タップすると、その場所へ移動します。</p>
+    <ol class="toc-list">
+      <li><a href="#sec1"><span class="toc-num">1</span>新たに分かったことと全体像</a></li>
+      <li><a href="#sec2"><span class="toc-num">2</span>家系と財産（戸籍・名簿・土地資料）</a></li>
+      <li><a href="#sec3"><span class="toc-num">3</span>祖先の仕事と大きな屋敷</a></li>
+      <li><a href="#sec4"><span class="toc-num">4</span>幕末の「榎並屋」と屋号</a></li>
+      <li><a href="#sec5"><span class="toc-num">5</span>東野田の歴史</a></li>
+      <li><a href="#sec6"><span class="toc-num">6</span>「天正」という名字の由来</a></li>
+      <li><a href="#sec7"><span class="toc-num">7</span>材料をつないだ推測と家紋</a></li>
+      <li><a href="#sec8"><span class="toc-num">8</span>これからの調査のポイント</a></li>
+    </ol>
+  </nav>
+
+  <!-- セクション1 -->
+  <section id="sec1">
+    <h2><span class="h2-num">1.</span>新たに分かったことと全体像</h2>
+
+
+    <div class="box box-unconfirmed">
+      <span class="tag tag-unconfirmed">要確認</span>
+      <div class="box-title">新たに確認した2つの記録</div>
+      <ol>
+        <li><strong>同じ東野田で、昔の村の有力な家が、借家を持つ地主になった実例</strong>（熊田兵蔵の事例）</li>
+        <li><strong>幕末の近くの町に、「榎並屋」を名乗る家があった記録</strong>（慶応元年、野田町の宿主2名）</li>
+      </ol>
+      <p>
+        <strong>ただし、これらと天正家との関係は、まだ確かめられていません。</strong>
+      </p>
+    </div>
+
+    <figure>
+      <figcaption>【図1】調査全体の構造（確かな史料から、推測へ）</figcaption>
+      <ol class="flow">
+        <li class="step step-blue">
+          <span class="step-label">段階1：史料で確認できる確かな事実</span>
+          <ul>
+            <li>明治の終わり：辰蔵さんの代に、東野田で複数の土地</li>
+            <li>昭和の初め：庄蔵さんの代に、「家主」（貸家の経営）</li>
+          </ul>
+        </li>
+        <li class="arrow" aria-hidden="true">▼</li>
+        <li class="step step-purple">
+          <span class="step-label">段階2：近くの実例・つなげて調べる手がかり</span>
+          <ul>
+            <li>① 東野田で、昔の村の有力な家が借家地主になった例</li>
+            <li>② 幕末の野田町にあった「榎並屋」の記録</li>
+          </ul>
+        </li>
+        <li class="arrow" aria-hidden="true">▼</li>
+        <li class="step step-dotted">
+          <span class="step-label">段階3：推測の幅が大きいこと</span>
+          <ul>
+            <li>地主になる前の仕事</li>
+            <li>東野田という土地の歴史</li>
+            <li>「天正」という名字の由来</li>
+            <li>材料をつないだ全体の推測</li>
+          </ul>
+        </li>
+      </ol>
+    </figure>
+
+    <p>このあと、段階1から段階3の順に説明します。</p>
+  </section>
+
+  <!-- セクション2 -->
+  <section id="sec2">
+    <h2><span class="h2-num">2.</span>家系と財産（戸籍・名簿・土地資料）</h2>
+
+    <h3>戸籍の上でのつながり</h3>
+    <p>
+      添付された戸籍では、庄蔵さんと、前の戸主（戸籍の上での家の代表者）である辰蔵さんとの続柄は、<strong>「孫」</strong>と読めます。したがって、<strong>辰蔵さんと庄蔵さんの間には、一世代あります</strong>。
+    </p>
+
+    <figure>
+      <figcaption>【図2】戸籍から読み取れる世代のつながり（矢印は、親から子へ）</figcaption>
+      <ol class="flow">
+        <li class="step step-blue">
+          <span class="step-label">辰蔵さん</span>
+          <p>前の戸主。1909年と1911年の史料に名前があります。</p>
+        </li>
+        <li class="arrow" aria-hidden="true">▼</li>
+        <li class="step step-purple">
+          <span class="step-label">庄蔵さんの父</span>
+          <p>氏名は、確定を保留しています。</p>
+        </li>
+        <li class="arrow" aria-hidden="true">▼</li>
+        <li class="step step-blue">
+          <span class="step-label">庄蔵さん</span>
+          <p>辰蔵さんの「孫」。1895年生まれ。</p>
+        </li>
+        <li class="arrow" aria-hidden="true">▼</li>
+        <li class="step step-plain">
+          <span class="step-label">雄之さん</span>
+          <p>庄蔵さんの子。</p>
+        </li>
+      </ol>
+    </figure>
+
+    <h3>史料で分かる時期と、その意味</h3>
+    <p class="table-label">【表1】明治の終わりから昭和の初めまで</p>
+    <ul class="cards">
+      <li class="card">
+        <span class="card-head">1909年</span>
+        <p><span class="k">史料で分かること</span>『日本紳士録』に、天正辰藏さん、東野田町77の記載があります。</p>
+        <p><span class="k">意味</span>遅くともこの時点で、東野田との関係が確認できます。</p>
+      </li>
+      <li class="card">
+        <span class="card-head">1911年刊</span>
+        <p><span class="k">史料で分かること</span>地籍の資料に、辰蔵さん名義の宅地と田があります。</p>
+        <p><span class="k">意味</span>庄蔵さんより前に、土地という財産のもとがあります。</p>
+      </li>
+      <li class="card">
+        <span class="card-head">1928年・1932年</span>
+        <p><span class="k">史料で分かること</span>庄蔵さんの職業欄に「家主」とあります。</p>
+        <p><span class="k">意味</span>貸家の経営をしていたことを、強く裏付けます。</p>
+      </li>
+      <li class="card">
+        <span class="card-head">1934年</span>
+        <p><span class="k">史料で分かること</span>引き続き、庄蔵さんを「家主」と記載しています。</p>
+        <p><span class="k">意味</span>「家主」という職業を、続けて追えます。</p>
+      </li>
+    </ul>
+
+    <div class="box box-caution">
+      <span class="tag tag-caution">注意</span>
+      <div class="box-title">「家主」と「戸主」は別のもの</div>
+      <p>
+        ここでの<strong>「家主」は、戸籍の「戸主」とは別で、職業としての記載</strong>です。
+      </p>
+      <p>
+        雄之さんから伝わる<strong>「地主だった」「正月に店子（借りて住む人）が挨拶に来た」</strong>という話と、よく合います。
+      </p>
+    </div>
+
+    <h3>財産ができた時期と、家に伝わる話</h3>
+    <div class="box box-supplement">
+      <div class="box-title">庄蔵さんの年齢から分かること</div>
+      <p>
+        庄蔵さんは<strong>1895年生まれ</strong>と読めるので、<strong>1911年にはまだ十代</strong>です。
+      </p>
+      <p>
+        そのため、<strong>庄蔵さんが一代で財産を築いたとは考えず、先代から受け継いだ財産を中心に考えるべき</strong>です。
+      </p>
+    </div>
+
+    <div class="box box-unconfirmed">
+      <span class="tag tag-unconfirmed">要確認</span>
+      <div class="box-title">辰蔵さんの財産は、どこから来たか</div>
+      <p>
+        <strong>辰蔵さん自身が財産を築いたのか、さらに前の代から相続したのかは、まだ分かりません。</strong>
+      </p>
+    </div>
+
+    <div class="box box-exception">
+      <span class="tag tag-exception">例外</span>
+      <div class="box-title">「道楽で財産を食いつぶした」という話</div>
+      <p>
+        <strong>「庄蔵さんが道楽で財産を食いつぶした」</strong>という話は、ご家族に伝わる話として残します。
+      </p>
+      <p>
+        ただし、<strong>その時期、失った財産の範囲、原因の全体は、名簿だけでは確かめられません。</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- セクション3 -->
+  <section id="sec3">
+    <h2><span class="h2-num">3.</span>祖先の仕事と大きな屋敷</h2>
+
+    <p>
+      祖先については、<strong>「土地から収入を得る家」というところまでは、強く言えます</strong>。それより前の仕事は、まだ一つに絞れません。
+    </p>
+    <p>
+      いまは、次の5つの道筋を考えています。
+    </p>
+
+    <p class="table-label">【表2】考えられる道筋と、その評価</p>
+    <ul class="cards">
+      <li class="card">
+        <p class="card-title">地域の土地の持ち主が、まちの広がりに合わせて貸家を増やした</p>
+        <p><span class="k">評価</span><strong>有力な説明</strong></p>
+      </li>
+      <li class="card">
+        <p class="card-title">農業と商売を兼ねる家が、土地・貸家の経営へ軸足を移した</p>
+        <p><span class="k">評価</span><strong>十分に考えられる</strong></p>
+      </li>
+      <li class="card">
+        <p class="card-title">商人の家が、利益で土地を買い、のちに家主が中心になった</p>
+        <p><span class="k">評価</span><strong>同じように検討すべき</strong></p>
+      </li>
+      <li class="card">
+        <p class="card-title">職人や製造業の人が、財産を蓄えた</p>
+        <p><span class="k">評価</span>否定できる材料はない</p>
+      </li>
+      <li class="card">
+        <p class="card-title">武家の領地や財産を引き継いだ</p>
+        <p><span class="k">評価</span>いまのところ、裏付けはない</p>
+      </li>
+    </ul>
+
+    <div class="box box-caution">
+      <span class="tag tag-caution">注意</span>
+      <div class="box-title">田を持っていたことと、農作業をしていたことは別</div>
+      <p>
+        辰蔵さんが田を持っていたことは、<strong>本人が農作業をしていた証拠ではありません</strong>。商人が農地を買い、他の人に耕作させた可能性もあります。
+      </p>
+    </div>
+
+    <h3>大きな屋敷になった理由</h3>
+    <p>
+      大きな屋敷になった理由は、<strong>「以前からの土地の蓄え」</strong>と、<strong>「まちが広がって、貸家や店舗から得られる収入が増えたこと」</strong>を組み合わせた説明が、いまの材料にはいちばんよく合います。
+    </p>
+
+    <figure>
+      <figcaption>【図3】土地の蓄えと、まちの広がりによる財産づくり</figcaption>
+      <ol class="flow">
+        <li class="step step-plain">
+          <span class="step-label">1. 以前からの土地の蓄え ＋ まちの広がり</span>
+          <p>土地の一部を、貸家や店舗にする。</p>
+        </li>
+        <li class="arrow" aria-hidden="true">▼</li>
+        <li class="step step-plain">
+          <span class="step-label">2. 収入の再投資と、世代を越えた継承</span>
+          <p>収入を、さらに土地や建物へ回し、次の世代へ引き継ぐ。</p>
+        </li>
+        <li class="arrow" aria-hidden="true">▼</li>
+        <li class="step step-blue">
+          <span class="step-label">3. 大きな自宅や使用人を、維持できる土台</span>
+          <ul>
+            <li>特別な身分を仮定しなくても、暮らしを説明できる</li>
+            <li>「道から次の道まで全部天正の家」は、貸家・店舗を含む所有地の広さを指す可能性がある</li>
+          </ul>
+        </li>
+      </ol>
+    </figure>
+
+
+    <div class="box box-exception">
+      <span class="tag tag-exception">例外</span>
+      <div class="box-title">天正家の収支までは確認できていません</div>
+      <p>
+        天正家について、<strong>この流れの収支まで確認できたわけではありません</strong>。ただ、特別な身分を仮定しなくても、伝わっている暮らしを説明できます。
+      </p>
+    </div>
+
+    <p>
+      なお、<strong>「道から次の道まで全部天正の家だった」</strong>という話は、自宅の屋敷だけでなく、<strong>貸家・店舗を含む所有地の範囲を指していた可能性</strong>もあります。
+    </p>
+
+    <h3>同じ東野田にあった近い例（熊田兵蔵）</h3>
+    <div class="box box-supplement">
+      <div class="box-title">庄屋の家から、借家地主へ</div>
+      <p>
+        これに近い道筋が、同じ東野田にあったことを確認しました。
+      </p>
+      <p>
+        <strong>大阪歴史博物館の展示資料</strong>によると、<strong>熊田兵蔵は、野田村の庄屋（村のまとめ役）を務めた家に生まれ、東野田町とその近くに借家を持つ地主</strong>でした。
+      </p>
+      <p>
+        これは天正家の身分や親族関係を証明する資料ではありません。ただ、<strong>「村の有力な家が、近代に借家地主になる」という道筋が、同じ地域にあった</strong>ことを示します。
+      </p>
+      <p>
+        そのため天正家を考えるときも、<strong>「商人か、武士か」の二択にせず、村の土地の持ち主、農業と商売の兼業、家持、家主という、つながった変化を考える価値</strong>があります。
+      </p>
+      <p>
+        <strong>ただし、天正家が庄屋だったという証拠は、見つかっていません。</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- セクション4 -->
+  <section id="sec4">
+    <h2><span class="h2-num">4.</span>幕末の「榎並屋」と屋号</h2>
+
+    <p>「榎並屋」については、幕末までさかのぼる、つなげて調べる手がかりが見つかりました。</p>
+
+    <div class="box box-unconfirmed">
+      <span class="tag tag-unconfirmed">要確認</span>
+      <div class="box-title">慶応元年（1865年）、野田町の宿主2名</div>
+      <p>
+        <strong>呉偉華「幕末期における都市大坂の御用宿」の表（70頁）</strong>には、慶応元年（1865年）の御用宿に関する史料をもとに、野田町の宿主として、次の2人が載っています。
+      </p>
+      <ul>
+        <li><strong>榎並屋栄松</strong></li>
+        <li><strong>榎並屋惣兵衛</strong></li>
+      </ul>
+      <p>
+        <strong>この2人が天正家の祖先かどうかは、まだ分かりません。</strong>
+      </p>
+    </div>
+
+    <div class="box box-caution">
+      <span class="tag tag-caution">注意</span>
+      <div class="box-title">区域の違い</div>
+      <p>
+        ここは<strong>網島町に接する、近くの野田町</strong>です。<strong>野田村・のちの東野田町の全域と、同じ区域ではありません</strong>。
+      </p>
+    </div>
+
+    <div class="box box-supplement">
+      <div class="box-title">それでも調べる価値がある理由</div>
+      <p>
+        遠くの同じ屋号を探すより、<strong>明治の初めの人名や土地の記録と照らし合わせる価値のある手がかり</strong>です。
+      </p>
+    </div>
+
+    <h3>「宿主」や「屋号」だけでは、職業や身分は決められない</h3>
+    <div class="box box-neutral">
+      <h4>① 「宿主」の意味</h4>
+      <p>
+        この<strong>「宿主」は、御用（役所の用事）で来た人の宿泊先になった家</strong>を指します。<strong>これだけで、旅館業だった、あるいは武士だったとは判断できません。</strong>
+      </p>
+      <h4>② 屋号の使われ方と由来</h4>
+      <p>
+        屋号（家や店につける呼び名）には、<strong>商店の営業名</strong>としての使い方と、地域で家を呼び分ける通称としての使い方があります。農家にも使われ、出身地、先祖の名、場所、本家・分家の関係などに由来します。
+      </p>
+      <p>
+        そのため、<strong>「榎並屋だから商人」とは決められません。</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- セクション5 -->
+  <section id="sec5">
+    <h2><span class="h2-num">5.</span>東野田（摂津国東成郡野田村）の歴史</h2>
+
+    <p>東野田の歴史は、<strong>少なくとも16世紀の終わりから17世紀の初めまでさかのぼって</strong>調べられます。</p>
+
+    <div class="box box-caution">
+      <span class="tag tag-caution">注意</span>
+      <div class="box-title">東成郡野田村と西成郡野田村は別の村</div>
+      <p>
+        調べるときの大事な名前は、<strong>摂津国東成郡野田村</strong>です。<strong>いまの福島区にあたる西成郡野田村とは、区別する必要があります。</strong>
+      </p>
+    </div>
+
+    <p class="table-label">【表3】東野田の歴史年表</p>
+    <p class="table-note">年表は、『大阪府全志』の東野田の項とその続き、『日本歴史地名大系』によります。古い検地録や絵図は、今回は、これらの地誌・辞典による紹介までを確認しています。</p>
+    <ol class="timeline">
+      <li>
+        <span class="tl-year">1594年（文禄3年）</span>
+        <p>『大阪府全志』の東野田の項が、この年の検地録（土地の調査記録）に野田村が出てくると紹介しています。</p>
+      </li>
+      <li>
+        <span class="tl-year">1605年（慶長10年）</span>
+        <p>『日本歴史地名大系』によれば、摂津国絵図に村の名前が見えます。</p>
+      </li>
+      <li>
+        <span class="tl-year">1723年（享保8年）</span>
+        <p>同じ辞典が、当時の地図の呼び名として<strong>「榎並ノ野田」</strong>を紹介しています。</p>
+      </li>
+      <li>
+        <span class="tl-year">1897年（明治30年）</span>
+        <p>村の一部が大阪市に入り、<strong>東成野田</strong>と呼ばれました。</p>
+      </li>
+      <li>
+        <span class="tl-year">1900年（明治33年）</span>
+        <p><strong>東野田町</strong>に名前が変わりました。</p>
+      </li>
+      <li>
+        <span class="tl-year">1914年（大正3年）</span>
+        <p>町の区域を整理し、<strong>一丁目から九丁目</strong>が決まりました。</p>
+      </li>
+    </ol>
+
+    <h3>「榎並ノ野田」という呼び名と、地域の性格</h3>
+    <div class="box box-supplement">
+      <div class="box-title">屋号の手がかりと、地域の成り立ち</div>
+      <p>
+        特に<strong>「榎並ノ野田」という呼び名は、屋号を考える手がかり</strong>です。榎並屋は、遠くから来た商人の出身地を示す名前だけでなく、<strong>地元の地域名に関係する呼び名だった可能性</strong>があります。
+      </p>
+      <p>
+        周辺は、<strong>農村と、街道・水運が接する場所</strong>でした。大阪市の説明にも、榎並川などで農作物や肥料を舟で運んでいたことが書かれています。商業、農業、運送、土地経営が重なり得る地域だったと考えられます。
+      </p>
+    </div>
+
+    <div class="box box-exception">
+      <span class="tag tag-exception">例外</span>
+      <div class="box-title">村の古さと、天正家がいつから住むかは別</div>
+      <p>
+        <strong>ただし、村が古いことと、天正家がその時代から住んでいることは別です。</strong>
+      </p>
+      <p>
+        辰蔵さんより何代前から住んでいたかは、いまは数字で示せません。<strong>江戸時代の後期から数代続く家</strong>という見方も、<strong>辰蔵さんや、その近い先代が移り住んだ、あるいは買い入れた</strong>という見方も、どちらも残っています。
+      </p>
+    </div>
+  </section>
+
+  <!-- セクション6 -->
+  <section id="sec6">
+    <h2><span class="h2-num">6.</span>「天正」という名字の由来</h2>
+
+    <p>
+      天正という名字は、<strong>「いつ名乗り始めたか」</strong>と<strong>「何を由来に選んだか」</strong>を分けて考えると、推測が進みます。
+    </p>
+
+    <div class="box box-caution">
+      <span class="tag tag-caution">注意</span>
+      <div class="box-title">名字の資料にある「元号あり」の読み方</div>
+      <p>
+        名字の資料の「天正」の項には、<strong>同じ名前の元号があること</strong>への言及があります。しかし、<strong>名づけた人、使い始めた時期、家系の上での根拠は示されていません</strong>。
+      </p>
+      <p>
+        <strong>「元号あり」という記述を、「元号が由来だと実証されている」と読み替えることはできません。</strong>
+      </p>
+    </div>
+
+    <h3>比べる価値がある5つの説</h3>
+    <p class="table-label">【表4】「天正」姓の成り立ちに関する説</p>
+    <ul class="cards">
+      <li class="card">
+        <p class="card-title">吉祥・理念に由来</p>
+        <p>「天」「正」の良い意味や響きを意識して、家名・姓にした。</p>
+      </li>
+      <li class="card">
+        <p class="card-title">元号を借用</p>
+        <p>古い元号の格式や、大坂の歴史への思いから選んだ。</p>
+      </li>
+      <li class="card">
+        <p class="card-title">天正年間の出来事を記念</p>
+        <p>定住・創業・土地取得などの転機を、後の世に名前として残した。</p>
+      </li>
+      <li class="card">
+        <p class="card-title">古い私称・家名の継承</p>
+        <p>以前から使っていた「天正」を、明治以降も正式な姓として引き継いだ。</p>
+      </li>
+      <li class="card">
+        <p class="card-title">秀吉・大名からの賜姓（名字を授かること）</p>
+        <p>奉公などの功績で授けられた。<strong>ただし、いまのところ裏付けはありません。</strong></p>
+      </li>
+    </ul>
+
+    <div class="box box-supplement">
+      <div class="box-title">説の組み合わせと、名字・元号の背景</div>
+      <h4>説は、一部が両立します</h4>
+      <p>
+        たとえば、<strong>明治に姓として採用し、その材料として古い元号を選んだ</strong>こともあり得ます。その場合、<strong>「元号に関係する姓」であっても、「天正年間から続く姓」とは限りません。</strong>
+      </p>
+      <h4>明治の苗字制度</h4>
+      <p>
+        <strong>1870年</strong>に平民が苗字を名乗ることが許され、1875年には使うことが義務になりました。ただし、それ以前から苗字を持っていた庶民もいたため、明治に新しく作ったと決めつけることもできません。
+      </p>
+      <h4>元号「天正」と字の意味</h4>
+      <p>
+        元号の天正は<strong>1573年</strong>に始まり、<strong>信長・秀吉が活躍した時期にまたがります。秀吉だけの名前ではありません。</strong>「天に正しい」という受け止め方は、字面からの自然な読み方ですが、それが天正家の実際の命名理由だったかは、別の問題です。
+      </p>
+    </div>
+  </section>
+
+  <!-- セクション7 -->
+  <section id="sec7">
+    <h2><span class="h2-num">7.</span>材料をつないだ推測と家紋</h2>
+
+    <div class="box box-caution">
+      <span class="tag tag-caution">注意</span>
+      <div class="box-title">史実と推測の区別</div>
+      <p>
+        <strong>ここからは、史実ではなく、これまでの材料をつなぎ合わせた推測です。</strong>
+      </p>
+    </div>
+
+    <figure>
+      <figcaption>【図4】材料をつないだ、天正家の歩み（推測の筋道）</figcaption>
+      <ol class="flow">
+        <li class="step step-plain">
+          <span class="step-label">前身：野田・榎並あたりでの土地所有</span>
+          <ul>
+            <li>地域では「榎並屋」と呼ばれていた</li>
+            <li>商売をしていた時期もあったかもしれない</li>
+          </ul>
+        </li>
+        <li class="arrow" aria-hidden="true">▼</li>
+        <li class="step step-plain">
+          <span class="step-label">転換：公的な姓として「天正」を採用</span>
+          <ul>
+            <li>以前の私称、または新たに選んだ名を、正式な姓にした</li>
+            <li>文字の意味、古い元号の響き、大坂の歴史への思い</li>
+          </ul>
+        </li>
+        <li class="arrow" aria-hidden="true">▼</li>
+        <li class="step step-blue">
+          <span class="step-label">近代：まちの広がりと、貸家・店舗経営の継承</span>
+          <ul>
+            <li>明治以降のまちの広がりで、貸家・店舗の敷地に使われた</li>
+            <li>辰蔵さんの代に複数の土地を持ち、庄蔵さんが財産を引き継いだ</li>
+          </ul>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="box box-supplement">
+      <div class="box-title">この筋道の強み</div>
+      <p>
+        この筋道は、<strong>屋号と姓が違うこと、土地を持っていたこと、家主という職業、大きな屋敷の言い伝えを、比較的少ない仮定で説明できます。</strong>
+      </p>
+    </div>
+
+    <h3>さらに想像を広げた場合と、家紋について</h3>
+    <div class="box box-unconfirmed">
+      <span class="tag tag-unconfirmed">要確認</span>
+      <div class="box-title">天正年間の転機説</div>
+      <p>
+        もう少し想像を広げれば、<strong>「天正年間に定住や創業の転機があり、のちにそれを記念して名にした」</strong>という可能性もあります。<strong>ただし、この説を優先できる直接の証拠はありません。</strong>
+      </p>
+      <p>
+        かりに天正年間とのつながりがあっても、<strong>農民・商人・職人などの道筋</strong>も考えられます。
+      </p>
+    </div>
+
+    <div class="box box-caution">
+      <span class="tag tag-caution">注意</span>
+      <div class="box-title">家紋「丸に違い鷹の羽」について</div>
+      <p>
+        <strong>「丸に違い鷹の羽」という家紋も、いまの段階では、武家の出身だと言い切る決め手にはなりません。</strong>家紋は商家や一般の家にも広がっていて、同じ紋だからといって、特定の武将の子孫とは判断できません。
+      </p>
+    </div>
+  </section>
+
+  <!-- セクション8 -->
+  <section id="sec8">
+    <h2><span class="h2-num">8.</span>これからの調査のポイント</h2>
+
+    <div class="box box-important">
+      <span class="tag tag-important">重要</span>
+      <div class="box-title">判断を最も変え得る2つの記録</div>
+      <p>これから、最も判断を変え得るのは、次の2つです。</p>
+      <ol>
+        <li><strong>辰蔵さんの土地の、前の持ち主と、手に入れた理由</strong></li>
+        <li><strong>幕末の榎並屋から、明治の天正姓へつながる記録</strong></li>
+      </ol>
+      <p>
+        ここがつながれば、<strong>「地主になった道筋」</strong>と「名字ができた時期」を、同時に絞れる可能性があります。
+      </p>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
