@@ -98,13 +98,14 @@
     margin: 0;
   }
 
-  /* ---------- 目次 ---------- */
+  /* ---------- 目次（2列の小さなボタン） ---------- */
   .toc-nav {
     background-color: var(--bg-card);
     border: 1.5px solid var(--border);
     border-radius: 14px;
-    padding: 16px 14px;
-    margin-bottom: 24px;
+    padding: 12px;
+    margin-bottom: 20px;
+    scroll-margin-top: 12px;
   }
 
   .toc-title {
@@ -112,20 +113,20 @@
     font-weight: 700;
     line-height: 1.5;
     color: var(--primary);
-    margin-bottom: 4px;
+    margin: 0 0 8px 2px;
   }
 
-  .toc-note {
+  .toc-hint {
     font-size: 1rem;
-    line-height: 1.65;
+    font-weight: 400;
     color: var(--text-muted);
-    margin-bottom: 12px;
+    margin-left: 6px;
   }
 
   .toc-list {
     list-style: none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 8px;
     padding: 0;
     margin: 0;
@@ -138,16 +139,18 @@
   .toc-list a {
     display: flex;
     align-items: center;
-    min-height: 56px;
-    padding: 8px 12px;
+    gap: 6px;
+    min-height: 60px;
+    height: 100%;
+    padding: 6px 8px;
     background-color: var(--bg-main);
     color: var(--primary);
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.05rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.4;
     border-radius: 10px;
-    border: 1px solid var(--border);
+    border: 1px solid var(--border-strong);
   }
 
   .toc-list a:active,
@@ -160,14 +163,58 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 32px;
-    width: 32px;
-    height: 32px;
+    flex: 0 0 28px;
+    width: 28px;
+    height: 28px;
     background-color: var(--primary);
     color: #FFFFFF;
     border-radius: 50%;
     font-size: 1rem;
-    margin-right: 12px;
+  }
+
+  .toc-label {
+    min-width: 0;
+  }
+
+  /* ---------- 右下の「目次」ボタン ---------- */
+  .toc-fab {
+    position: fixed;
+    right: 12px;
+    bottom: 16px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 76px;
+    height: 56px;
+    padding: 0 16px;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 28px;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .toc-fab:active,
+  .toc-fab:focus {
+    background-color: #0F2340;
+    outline: 3px solid #8CA6CC;
+  }
+
+  @supports (animation-timeline: scroll()) {
+    .toc-fab {
+      opacity: 0;
+      pointer-events: none;
+      animation: fab-show linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0px 500px;
+    }
+    @keyframes fab-show {
+      to { opacity: 1; pointer-events: auto; }
+    }
   }
 
   /* ---------- セクション ---------- */
@@ -497,6 +544,9 @@
       background: none;
       color: #000000;
     }
+    .toc-fab {
+      display: none;
+    }
     section, .box, .card, .step, figure, .timeline > li {
       break-inside: avoid;
     }
@@ -516,6 +566,21 @@
     </p>
   </div>
 
+  <!-- 目次 -->
+  <nav class="toc-nav" id="toc" aria-label="目次">
+    <div class="toc-title">目次 <span class="toc-hint">タップで移動します</span></div>
+    <ol class="toc-list">
+      <li><a href="#sec1"><span class="toc-num">1</span><span class="toc-label">新しい記録と全体像</span></a></li>
+      <li><a href="#sec2"><span class="toc-num">2</span><span class="toc-label">家系と財産</span></a></li>
+      <li><a href="#sec3"><span class="toc-num">3</span><span class="toc-label">仕事と屋敷</span></a></li>
+      <li><a href="#sec4"><span class="toc-num">4</span><span class="toc-label">榎並屋と屋号</span></a></li>
+      <li><a href="#sec5"><span class="toc-num">5</span><span class="toc-label">東野田の歴史</span></a></li>
+      <li><a href="#sec6"><span class="toc-num">6</span><span class="toc-label">名字の由来</span></a></li>
+      <li><a href="#sec7"><span class="toc-num">7</span><span class="toc-label">推測と家紋</span></a></li>
+      <li><a href="#sec8"><span class="toc-num">8</span><span class="toc-label">これからの調査</span></a></li>
+    </ol>
+  </nav>
+
   <!-- まず結論 -->
   <div class="lead-block">
     <p class="lead-names">この資料に出てくる方は、辰蔵さん、その孫の庄蔵さん、庄蔵さんの子の雄之さんです。</p>
@@ -531,25 +596,9 @@
       </div>
   </div>
 
-  <!-- 目次 -->
-  <nav class="toc-nav" aria-label="目次">
-    <div class="toc-title">目次</div>
-    <p class="toc-note">タップすると、その場所へ移動します。</p>
-    <ol class="toc-list">
-      <li><a href="#sec1"><span class="toc-num">1</span>新たに分かったことと全体像</a></li>
-      <li><a href="#sec2"><span class="toc-num">2</span>家系と財産（戸籍・名簿・土地資料）</a></li>
-      <li><a href="#sec3"><span class="toc-num">3</span>祖先の仕事と大きな屋敷</a></li>
-      <li><a href="#sec4"><span class="toc-num">4</span>幕末の「榎並屋」と屋号</a></li>
-      <li><a href="#sec5"><span class="toc-num">5</span>東野田の歴史</a></li>
-      <li><a href="#sec6"><span class="toc-num">6</span>「天正」という名字の由来</a></li>
-      <li><a href="#sec7"><span class="toc-num">7</span>材料をつないだ推測と家紋</a></li>
-      <li><a href="#sec8"><span class="toc-num">8</span>これからの調査のポイント</a></li>
-    </ol>
-  </nav>
-
   <!-- セクション1 -->
   <section id="sec1">
-    <h2><span class="h2-num">1.</span>新たに分かったことと全体像</h2>
+    <h2><span class="h2-num">1.</span>新しい記録と全体像</h2>
 
 
     <div class="box box-unconfirmed">
@@ -1069,6 +1118,8 @@
       </p>
     </div>
   </section>
+
+  <a href="#toc" class="toc-fab" aria-label="目次へ移動">↑ 目次</a>
 
 </main>
 </body>
